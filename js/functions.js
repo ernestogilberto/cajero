@@ -12,6 +12,9 @@ import {users} from "./db.js"
 import {balance, index, setBalance, setIndex, setUser, user} from "./main.js"
 
 const returnUser = () => {
+    setUser(null)
+    setIndex(null)
+    setBalance(null)
     userScreen()
 }
 
