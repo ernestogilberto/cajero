@@ -1,0 +1,174 @@
+@font-face {
+    font-family : pixearg;
+    src         : url(../fonts/PIXEARG_.TTF);
+}
+
+* {
+    margin      : 0;
+    padding     : 0;
+    box-sizing  : border-box;
+    font-family : pixearg, sans-serif;
+}
+
+body {
+    width : 100%;
+}
+
+p {
+    font-family : pixearg, sans-serif;
+    font-weight : 100;
+    color       : white;
+    text-align  : center;
+    padding-top : 10px;
+}
+
+.error {
+    color      : red;
+}
+
+.main-txt {
+    font-size : 1.5em;
+    margin-top : 100px;
+}
+
+.instruction-txt {
+    font-size : 1em;
+}
+
+.btn-txt {
+    font-size : 0.8em;
+}
+
+#cajero {
+    position           : relative;
+    left               : 50%;
+    transform          : translateX(-50%);
+    margin-block-start : 30px;
+    display            : inline-block;
+}
+
+#screen {
+    position  : absolute;
+    top       : 50%;
+    left      : 50%;
+    transform : translateX(-50%) translateY(-50%);
+    width     : calc(100% - 170px);
+    height    : calc(100% - 180px);
+    z-index   : 20;
+}
+
+.left {
+    position : absolute;
+    left     : 10px;
+}
+
+.right {
+    position : absolute;
+    right    : 10px;
+}
+
+.top {
+    top : 115px;
+}
+
+.mid-top {
+    top : 167px;
+}
+
+.mid-bottom {
+    top : 222px;
+}
+
+.bottom {
+    top : 275px;
+}
+
+input {
+    text-align       : center;
+    width            : 80%;
+    height           : 30px;
+    display          : block;
+    margin-inline    : auto;
+    margin-block     : 15px;
+    background-color : #003169;
+    color            : white;
+}
+
+input:focus {
+    outline : none;
+}
+
+#keyboard {
+    width            : 90%;
+    background-color : #003169;
+    overflow         : hidden;
+    margin           : 0 auto;
+}
+
+#letters > span {
+    padding          : 3px;
+    width            : 33px;
+    text-align       : center;
+    margin           : 2px;
+    float            : left;
+    cursor           : pointer;
+    border-radius    : 3px;
+    color            : #FFF;
+    background-color : #003169;
+    border           : 1px solid #AAA;
+}
+
+#letters > span.back {
+    width : 105px;
+}
+
+#letters > span.back::after {
+    content : "\232B";
+}
+
+#letters > span.space {
+    width : calc(95%);
+}
+
+#letters > span.space::after {
+    content : "espacio";
+}
+
+
+.btn {
+    position         : absolute;
+    background-color : rgba(150, 255, 150, .4);
+    width            : 60px;
+    height           : 40px;
+    cursor           : pointer;
+}
+
+.btn-left {
+    position                   : absolute;
+    left                       : 10px;
+    border-top-right-radius    : 38%;
+    border-bottom-right-radius : 38%;
+}
+
+.btn-right {
+    position                  : absolute;
+    right                     : 10px;
+    border-top-left-radius    : 38%;
+    border-bottom-left-radius : 38%;
+}
+
+.btn-top {
+    top : 202px;
+}
+
+.btn-mid-top {
+    top : 255px;
+}
+
+.btn-mid-bottom {
+    top : 310px;
+}
+
+.btn-bottom {
+    top : 364px;
+}
