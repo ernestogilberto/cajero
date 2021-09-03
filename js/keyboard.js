@@ -5,7 +5,7 @@ const setLetters = () => {
     idLetters.innerHTML = ""
     qwerty.split(',').map(element => {
         let letter = document.createElement("span")
-        letter.addEventListener("click", teclaPulsada)
+        letter.addEventListener("click", currentKey)
         letter.innerText = element;
 
         if (element === '\u007f') {
@@ -20,9 +20,9 @@ const setLetters = () => {
     })
 }
 
-function teclaPulsada() {
-    const key = this.classList.contains("space") ? " " : this.innerText;
-    document.getElementById("text").value += key;
+function currentKey() {
+    const key = this.classList.contains("space") ? " " : this.innerText
+    document.getElementById("text").value += key
 }
 
 export {setLetters}
