@@ -18,6 +18,8 @@ const returnUser = () => {
     userScreen()
 }
 
+//completar las validaciones
+
 const getUser = () => {
     let data = document.getElementById("text").value
     for (let dataKey in users) {

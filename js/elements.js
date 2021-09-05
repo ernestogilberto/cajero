@@ -1,5 +1,6 @@
 import {screen} from "./screens.js";
 import {addElement, destructor} from "./constructors.js";
+import {buttons} from "./main.js";
 
 
 const addInstruction = (text,) => {
