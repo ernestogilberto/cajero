@@ -13,10 +13,9 @@ import {
     returnUserBtn,
     secBackMenuBtn
 } from "./buttons.js";
-import {balance, index, user} from "./main.js";
+import {balance} from "./main.js";
 
 let screen = document.getElementById("screen")
-let buttons = document.getElementById("buttons")
 
 const userScreen = () => {
     cleanAll()
@@ -88,7 +87,6 @@ const depositScreen = (bool) => {
 export {
     userScreen,
     screen,
-    buttons,
     passwordScreen,
     menuScreen,
     getBalanceScreen,

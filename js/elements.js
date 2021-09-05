@@ -1,4 +1,4 @@
-import {buttons, screen} from "./screens.js";
+import {screen} from "./screens.js";
 import {addElement, destructor} from "./constructors.js";
 
 

@@ -1,4 +1,5 @@
 import {setLetters} from "./keyboard.js";
+import {buttons} from "./main.js";
 
 const addElement = (father, tag, text, className = null, idName = null) => {
     let element = document.createElement(tag)
@@ -24,8 +25,8 @@ const addKeyboard = (father) => {
     setLetters()
 }
 
-const addBtn = (father, className, idName, func) => {
-    addElement(father, "div", "", className, idName)
+const addBtn = (className, idName, func) => {
+    addElement(buttons, "div", "", className, idName)
     let btn = document.getElementById(idName)
     btn.addEventListener("click", func)
 }
